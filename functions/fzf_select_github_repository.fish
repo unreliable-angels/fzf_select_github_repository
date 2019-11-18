@@ -1,5 +1,5 @@
 function fzf_select_github_repository -d 'fzf source to cd to repository under $HOME/GitHub'
-    set -l github_directory "$HOME/ghq/github.com"
+    set -l github_directory "$HOME/GitHub"
 
     find "$github_directory" -mindepth 2 -maxdepth 2 -type d \
         | string replace "$github_directory/" "" \
